@@ -15,6 +15,7 @@
 		DB22D8D71EEA4F7B002F3F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB22D8D51EEA4F7B002F3F61 /* LaunchScreen.storyboard */; };
 		DB22D8E21EEA4F7B002F3F61 /* BTTOOLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22D8E11EEA4F7B002F3F61 /* BTTOOLDemoTests.m */; };
 		DB22D8ED1EEA4F7B002F3F61 /* BTTOOLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22D8EC1EEA4F7B002F3F61 /* BTTOOLDemoUITests.m */; };
+		DB22D8FE1EEA51DB002F3F61 /* UIView+EasyUse.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22D8FD1EEA51DB002F3F61 /* UIView+EasyUse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		DB22D8E81EEA4F7B002F3F61 /* BTTOOLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTTOOLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB22D8EC1EEA4F7B002F3F61 /* BTTOOLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTTOOLDemoUITests.m; sourceTree = "<group>"; };
 		DB22D8EE1EEA4F7B002F3F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB22D8FB1EEA51B4002F3F61 /* BDefineTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDefineTool.h; sourceTree = "<group>"; };
+		DB22D8FC1EEA51DB002F3F61 /* UIView+EasyUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyUse.h"; sourceTree = "<group>"; };
+		DB22D8FD1EEA51DB002F3F61 /* UIView+EasyUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyUse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		DB22D8C61EEA4F7B002F3F61 /* BTTOOLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DB22D8FA1EEA51B4002F3F61 /* BTTOOL */,
 				DB22D8CA1EEA4F7B002F3F61 /* AppDelegate.h */,
 				DB22D8CB1EEA4F7B002F3F61 /* AppDelegate.m */,
 				DB22D8CD1EEA4F7B002F3F61 /* ViewController.h */,
@@ -138,6 +143,17 @@
 				DB22D8EE1EEA4F7B002F3F61 /* Info.plist */,
 			);
 			path = BTTOOLDemoUITests;
+			sourceTree = "<group>";
+		};
+		DB22D8FA1EEA51B4002F3F61 /* BTTOOL */ = {
+			isa = PBXGroup;
+			children = (
+				DB22D8FB1EEA51B4002F3F61 /* BDefineTool.h */,
+				DB22D8FC1EEA51DB002F3F61 /* UIView+EasyUse.h */,
+				DB22D8FD1EEA51DB002F3F61 /* UIView+EasyUse.m */,
+			);
+			name = BTTOOL;
+			path = ../../BTTOOL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +294,7 @@
 			files = (
 				DB22D8CF1EEA4F7B002F3F61 /* ViewController.m in Sources */,
 				DB22D8CC1EEA4F7B002F3F61 /* AppDelegate.m in Sources */,
+				DB22D8FE1EEA51DB002F3F61 /* UIView+EasyUse.m in Sources */,
 				DB22D8C91EEA4F7B002F3F61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +531,7 @@
 				DB22D8F31EEA4F7B002F3F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB22D8F41EEA4F7B002F3F61 /* Build configuration list for PBXNativeTarget "BTTOOLDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +540,7 @@
 				DB22D8F61EEA4F7B002F3F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB22D8F71EEA4F7B002F3F61 /* Build configuration list for PBXNativeTarget "BTTOOLDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +549,7 @@
 				DB22D8F91EEA4F7B002F3F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -84,4 +84,18 @@
 -(void)setCenterY:(CGFloat)centerY {
     [self setCenter:CGPointMake(self.center.x, centerY)];
 }
+
+
+#pragma mark -- methods --
+
+-(CGRect)relativeRectForView:(UIView *)relativeView {
+    UIView * findView = self;
+    CGRect relativeRect = findView.frame;
+
+    while (findView.superview && findView.superview != relativeView) {
+        findView = findView.superview;
+        relativeRect = CGRectOffset(relativeRect, findView.frame.origin.x, findView.frame.origin.y);
+    }
+    return relativeRect;
+}
 @end

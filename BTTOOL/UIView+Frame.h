@@ -25,4 +25,7 @@
 @property (nonatomic) CGFloat centerY;
 
 
+//查找相对位置 self相对于relativeView的Rect relativeView 必须是self的父视图
+-(CGRect)relativeRectForView:(UIView *)relativeView;
+
 @end

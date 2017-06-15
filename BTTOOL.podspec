@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BTTOOL"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "easy way to coding with objective - c"
 
   # This description is used to generate tags and improve search results.
